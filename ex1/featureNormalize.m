@@ -25,9 +25,11 @@ sigma = zeros(1, size(X, 2));
 %
 % Hint: You might find the 'mean' and 'std' functions useful.
 %       
-
-
-
+for dim=1:size(X, 2)
+    mu(dim) = mean(X(:,dim));
+    sigma(dim) = std(X(:,dim));
+    X_norm(:,dim) = (X(:,dim) - mu(dim)) ./ sigma(dim);
+end
 
 
 

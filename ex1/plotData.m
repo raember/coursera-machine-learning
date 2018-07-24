@@ -16,7 +16,10 @@ figure; % open a new figure window
 %       appear as red crosses. Furthermore, you can make the
 %       markers larger by using plot(..., 'rx', 'MarkerSize', 10);
 
-
+plot(x, y, "rx");
+grid on;
+xlabel("Population $x$($\frac{1}{10'000}$)", 'Interpreter', 'latex');
+ylabel("Profit $y$($\frac{1}{\$10'000}$)", 'Interpreter', 'latex');
 
 
 
